@@ -27,12 +27,12 @@ Plataformas digitais precisam registrar cada detalhe do consumo dos usuários (q
 Imagine uma plataforma de vídeo que precisa armazenar o histórico de reprodução de seus usuários.
 Cada usuário pode assistir a vários vídeos e, para cada reprodução, podemos ter informações como:
 
-ID do usuário;
-ID do vídeo;
-Data e hora da última reprodução;
-Idioma preferido;
-Dispositivos suportados;
-Avaliação do conteúdo;
+ID do usuário
+ID do vídeo
+Data e hora da última reprodução
+Idioma preferido
+Dispositivos suportados
+Avaliação do conteúdo
 Outras informações relacionadas à experiência daquele usuário.
 
 O desafio é conseguir armazenar e consultar esse histórico de forma rápida e escalável.

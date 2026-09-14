@@ -120,6 +120,7 @@ Neste laboratório utilizei o DynamoDB para:
 
 ## Partition Key e Sort Key
 **Partition Key — userId**
+
 A userId identifica o usuário ao qual aquele registro pertence.
 É a chave utilizada para determinar a partição lógica onde os dados serão armazenados.
 

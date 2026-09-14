@@ -2,4 +2,4 @@
 Hands-on AWS Skill Builder focado em Amazon DynamoDB, modelagem NoSQL, Partition Key, Sort Key e consultas de dados.
 
 
-![Visão Geral do Problema](./imagem_1.png)
+![Dashboard NoSQL & Nuvem](imagem1.png)

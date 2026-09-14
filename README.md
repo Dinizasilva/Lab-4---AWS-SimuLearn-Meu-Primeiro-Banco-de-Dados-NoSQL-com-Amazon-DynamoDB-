@@ -46,3 +46,104 @@ Essa foi uma das partes mais importantes que comecei a perceber durante o labora
 <p align="center">
   <img src="./Etapa%202.png" width="600" />
 </p>
+
+
+## O desafio do laboratório
+
+O objetivo foi construir uma tabela NoSQL para armazenar o histórico de vídeos assistidos pelos usuários.
+
+Durante o laboratório, precisei:
+
+Entender o funcionamento de um banco NoSQL.
+Criar uma tabela no Amazon DynamoDB.
+Definir a chave de partição.
+Definir a chave de classificação.
+Inserir itens na tabela.
+Trabalhar com diferentes tipos de atributos.
+Realizar consultas utilizando a chave de classificação.
+Criar manualmente um novo registro como parte do desafio prático.
+Adicionar um atributo numérico de avaliação (rating).
+Validar o resultado final do laboratório.
+
+
+## O que eu precisei entender, compreender e fazer.
+
+Primeiro fui entender como funciona um **Banco NoSQL**.
+
+Durante o laboratório, comecei entendendo que o DynamoDB trabalha de uma forma diferente de um banco de dados relacional. Em vez de pensar primeiro em tabelas e relacionamentos, precisei pensar em como os dados seriam armazenados e principalmente como seriam consultados.
+
+Na prática, aprendi que cada registro é um item e que os dados desse item são organizados por atributos. Também entendi o papel da Partition Key (userId), que identifica e organiza os dados de um usuário, e da Sort Key (lastDateWatched), que permite organizar os registros dentro dessa mesma chave.
+
+Foi fazendo a criação da tabela, inserindo os itens e realizando as consultas que esse conceito começou a fazer sentido para mim. 
+Ou seja, não fiquei apenas na teoria: **criei, inseri, consultei e validei os dados no DynamoDB**.
+
+
+## A tabela utilizada no laboratório foi:
+
+Um dos pontos que mais chamou minha atenção foi perceber que um item do DynamoDB não precisa seguir uma estrutura rígida como uma tabela relacional tradicional.
+
+No laboratório, trabalhei com atributos como:
+
+* userId
+* Sort Key
+* lastDateWatched
+* videoId
+* preferredLanguage
+* supportedDeviceTypes
+
+e, no desafio prático:
+* rating
+
+Também trabalhei com diferentes tipos de dados, incluindo String, Number e List.
+Isso ajudou a tornar mais concreto o conceito de estrutura flexível do NoSQL.
+
+Esse ponto foi especialmente importante para entender uma diferença fundamental entre bancos relacionais e NoSQL:
+No DynamoDB, a forma como os dados são modelados está diretamente relacionada à forma como eles serão consultados.
+
+
+## Serviços e tecnologias utilizados
+* Amazon DynamoDB
+* Banco de dados NoSQL totalmente gerenciado da AWS.
+
+Neste laboratório utilizei o DynamoDB para:
+
+* Criar a tabela;
+* Definir as chaves;
+* Inserir itens;
+* Armazenar diferentes tipos de atributos;
+* Consultar os registros;
+* Testar filtros utilizando a chave de classificação.
+
+## AWS Skill Builder / SimuLearn
+* Ambiente utilizado para realizar o laboratório prático e validar as atividades propostas.
+
+
+## Partition Key e Sort Key
+**Partition Key — userId**
+A userId identifica o usuário ao qual aquele registro pertence.
+É a chave utilizada para determinar a partição lógica onde os dados serão armazenados.
+
+## Sort Key — lastDateWatched
+A lastDateWatched permite organizar os registros dentro da mesma chave de partição.
+
+Assim, podemos pensar no modelo desta maneira:
+
+userId
+   │
+   ├── lastDateWatched
+   │       └── videoId
+   │
+   ├── lastDateWatched
+   │       └── videoId
+   │
+   └── lastDateWatched
+           └── videoId
+
+Ou seja: **um usuário → vários registros de histórico → organizados pela data**.
+
+
+
+
+
+
+

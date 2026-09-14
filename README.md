@@ -222,3 +222,100 @@ Essa etapa foi importante para confirmar que não apenas criei a tabela, mas tam
   <img src="./Etapa%204.png" width="600" />
 </p>
 
+
+
+## O que eu aprendi
+
+Este laboratório me ajudou a entender o DynamoDB de uma forma muito mais prática.
+Alguns conceitos ficaram especialmente claros:
+
+* NoSQL não significa simplesmente "sem estrutura". Existe estrutura.
+A diferença é que o modelo é pensado de outra maneira e pode ser mais flexível em relação aos atributos dos itens.
+
+* A modelagem começa pelas consultas
+No DynamoDB, precisamos pensar: “Como vou consultar esses dados?”. antes de simplesmente criar uma estrutura.
+
+* Partition Key é fundamental . A escolha da Partition Key influencia diretamente a forma como os dados serão distribuídos e acessados.
+
+* Sort Key permite organizar e consultar dentro da mesma partição
+No laboratório, isso fez bastante sentido ao trabalhar com o histórico de reprodução por usuário e data.
+
+* DynamoDB é um serviço gerenciado. Não precisei administrar servidores de banco de dados.
+
+A AWS cuida da infraestrutura necessária para o serviço, permitindo que o foco fique na aplicação e nos dados.
+
+
+## Um ponto que quero levar para os próximos labs
+
+Uma coisa que ficou muito clara para mim é que não devo pensar no DynamoDB como se fosse simplesmente um banco relacional com outro nome.
+
+A lógica é diferente. No modelo relacional, muitas vezes começamos pensando em:
+tabelas → relacionamentos → normalização → consultas
+
+No DynamoDB, precisamos dar muito mais atenção a:
+padrões de acesso → chaves → distribuição → performance
+
+Essa mudança de pensamento é uma parte importante do meu aprendizado em Cloud.
+
+## O que este laboratório acrescenta à minha jornada Cloud
+
+Até aqui, meus estudos vinham passando por vários componentes da AWS relacionados à infraestrutura, computação, rede e armazenamento.
+Neste laboratório, entrei mais diretamente na parte de dados.
+E isso é importante para a minha formação em Cloud porque uma aplicação na nuvem não é apenas: servidor + rede.
+
+Também temos: computação + rede + armazenamento + banco de dados + segurança + monitoramento + custos.
+
+O DynamoDB foi mais uma peça desse quebra-cabeça.
+
+## Evidências do laboratório
+
+Abaixo estão alguns registros das etapas realizadas durante o laboratório:
+
+* Criação e configuração da tabela
+* Estrutura e itens da tabela
+* Consulta dos registros
+* Desafio prático — DIY
+* Validação do laboratório
+
+## Principais conceitos praticados
+
+Amazon DynamoDB
+        │
+        ├── NoSQL
+        ├── Partition Key
+        ├── Sort Key
+        ├── Items
+        ├── Attributes
+        ├── String
+        ├── Number
+        ├── List
+        ├── Query
+        └── Modelagem orientada a padrões de acesso
+
+
+## Resultado
+
+Mais um laboratório concluído na minha jornada prática com AWS.
+Neste Lab 4, meu principal objetivo não foi apenas aprender a clicar e criar uma tabela.
+Foi começar a entender como pensar dados dentro da AWS.
+A prática com o DynamoDB me mostrou que aprender Cloud também significa entender o que acontece com os dados que as aplicações precisam armazenar, consultar e escalar.
+
+Estudar → praticar → entender → documentar.
+É assim que estou construindo minha jornada em Cloud.
+
+## Sobre a autora
+
+Sou Eliana Diniz, profissional em transição de carreira para a área de Cloud Computing.
+Minha jornada combina minha experiência anterior com Análise de Dados e meu atual direcionamento para AWS e Cloud Engineering.
+
+Neste momento, estou construindo minha base em Cloud por meio de estudos, certificações e principalmente laboratórios práticos, documentando aquilo que realmente executo. Meu objetivo é transformar conhecimento teórico em experiência prática e continuar avançando na direção de Cloud Engineer.
+
+LinkedIn: linkedin.com/in/eliana-diniz
+GitHub: github.com/Dinizasilva
+E-mail: eliana.dinizsilva@gmail.com
+
+
+## Sobre a Trilha AWS Skill Builder
+Lab 4 — AWS SimuLearn: Meu Primeiro Banco de Dados NoSQL
+Prática realizada. Conhecimento construído. Próximo laboratório.
+

@@ -143,7 +143,23 @@ userId
 Ou seja: **um usuário → vários registros de histórico → organizados pela data**.
 
 
+## Resolvendo o problema
 
+Depois de criar a tabela e inserir os registros, o próximo passo foi entender como consultar essas informações.
+Utilizei uma operação de Query, trabalhando com a chave de partição e condições sobre a chave de classificação.
+
+Um dos exercícios utilizou uma condição de comparação do tipo:
+**Greater than (>)**. Isso permitiu buscar registros posteriores a determinado valor da chave de classificação.
+
+Na prática, comecei a perceber uma coisa importante:
+
+Não basta armazenar os dados; é preciso modelá-los pensando nas consultas que a aplicação precisará realizar.
+Essa foi uma das principais lições deste laboratório.
+
+
+<p align="center">
+  <img src="./Etapa%203.png" width="600" />
+</p>
 
 
 

@@ -278,7 +278,6 @@ Abaixo estão alguns registros das etapas realizadas durante o laboratório:
 * Validação do laboratório
 
 ## Principais conceitos praticados
-
 Amazon DynamoDB
         │
         ├── NoSQL
@@ -291,7 +290,6 @@ Amazon DynamoDB
         ├── List
         ├── Query
         └── Modelagem orientada a padrões de acesso
-
 
 ## Resultado
 
@@ -310,9 +308,9 @@ Minha jornada combina minha experiência anterior com Análise de Dados e meu at
 
 Neste momento, estou construindo minha base em Cloud por meio de estudos, certificações e principalmente laboratórios práticos, documentando aquilo que realmente executo. Meu objetivo é transformar conhecimento teórico em experiência prática e continuar avançando na direção de Cloud Engineer.
 
-LinkedIn: linkedin.com/in/eliana-diniz
-GitHub: github.com/Dinizasilva
-E-mail: eliana.dinizsilva@gmail.com
+* LinkedIn: linkedin.com/in/eliana-diniz
+* GitHub: github.com/Dinizasilva
+* E-mail: eliana.dinizsilva@gmail.com
 
 
 ## Sobre a Trilha AWS Skill Builder

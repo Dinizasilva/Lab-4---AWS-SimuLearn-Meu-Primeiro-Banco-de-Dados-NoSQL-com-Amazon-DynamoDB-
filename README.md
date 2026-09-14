@@ -162,5 +162,63 @@ Essa foi uma das principais lições deste laboratório.
 </p>
 
 
+## Mão na massa
 
+Durante o laboratório, passei por algumas etapas principais.
+
+1- Criação da tabela
+
+Criei a tabela: UserVideoHistory
+e defini: userId como Partition Key;
+lastDateWatched como Sort Key.
+
+2- Inserção dos dados
+
+Depois da criação da tabela, inseri os registros disponibilizados pelo laboratório.
+Os itens continham informações relacionadas ao histórico de reprodução dos usuários.
+
+Entre os atributos trabalhados estavam:
+
+* videoId;
+* preferredLanguage;
+* supportedDeviceTypes;
+* lastDateWatched.
+
+3- Trabalhando com diferentes tipos de dados
+
+Uma parte interessante foi perceber que os atributos podem representar diferentes tipos de informação. Por exemplo:
+
+* videoId → String
+* rating → Number
+* supportedDeviceTypes → List
+
+Isso ajudou a visualizar na prática como o DynamoDB trabalha com os tipos de dados disponíveis.
+
+4- Consultando os registros
+
+Com a tabela preenchida, realizei consultas utilizando a operação Query.
+O objetivo foi recuperar registros de um determinado usuário e aplicar uma condição sobre a Sort Key.
+
+Foi aqui que a relação entre: Partition Key + Sort Key + Query
+ficou muito mais clara para mim.
+
+## Desafio prático — DIY
+
+Depois das etapas guiadas, veio uma parte que gostei bastante do laboratório: o desafio prático.
+Precisava criar manualmente um novo item utilizando um identificador de usuário próprio e adicionar um atributo numérico: **rating**
+
+Essa etapa foi importante porque deixou de ser apenas: “faça exatamente isso”.
+
+Passei a precisar aplicar o que tinha acabado de aprender.
+Criei o registro, inseri os atributos solicitados, preenchi o formulário de validação e conferi se o resultado atendia aos requisitos do laboratório.
+
+## Validação
+
+Depois de concluir as etapas, realizei a validação do desafio no ambiente do SimuLearn.
+O laboratório foi concluído com sucesso.
+Essa etapa foi importante para confirmar que não apenas criei a tabela, mas também executei corretamente as operações solicitadas.
+
+<p align="center">
+  <img src="./Etapa%204.png" width="600" />
+</p>
 
